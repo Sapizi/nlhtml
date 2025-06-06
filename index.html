@@ -10,272 +10,297 @@
 </head>
 <body>
     <header>
-        <section class="header_links">
-            <nav class="left_navigation">
-                <button onclick="window.location.href='index.html'" class="logo_link" >
-                    <img src="/images/logo.svg" alt="Логотип">
-                </button>
-                <button onclick="window.location.href='add.html'" class="white_button">Добавить</button>
-            </nav>
-            <nav class="right_links">
-                <button class="white_button">Отзывы</button>
-                <button class="small_grey_button" onclick="window.location.href='login.html'">Войти</button>
-                <button class="big_grey_button" onclick="window.location.href='registration.html'">Зарегистрироваться</button>
-                <button class="account_button" onclick="window.location.href='login.html'">
-                    <img src="/images/account.svg" alt="Аккаунт" onclick="window.location.href='login.html'">
-                </button>
-            </nav>
-        </section>
-        <section class="header_text">
-            <h1 class="header_title">НОВАЯ ЖИЗНЬ</h1>
-            <p class="header_subtitle">Найди своего любимца или помоги другому найти свой дом</p>
+        <section class="wrapper">
+
+            <section class="header_links">
+                <nav class="left_navigation">
+                    <button onclick="window.location.href='index.html'" class="logo_link" >
+                        <img src="/images/logo.svg" alt="Логотип">
+                    </button>
+                    <button onclick="window.location.href='add.html'" class="white_button">Добавить</button>
+                </nav>
+                <nav class="right_links">
+                    <button class="white_button">Отзывы</button>
+                    <button class="small_grey_button" onclick="window.location.href='login.html'">Войти</button>
+                    <button class="big_grey_button" onclick="window.location.href='registration.html'">Зарегистрироваться</button>
+                    <button class="account_button" onclick="window.location.href='login.html'">
+                        <img src="/images/account.svg" alt="Аккаунт" onclick="window.location.href='login.html'">
+                    </button>
+                </nav>
+            </section>
+            <section class="header_text">
+                <h1 class="header_title">НОВАЯ ЖИЗНЬ</h1>
+                <p class="header_subtitle">Найди своего любимца или помоги другому найти свой дом</p>
+            </section>
         </section>
     </header>
-    <form class="find">
-        <fieldset class="find_left">
-            <p class="find_input_title">КОГО ВЫ ИЩЕТЕ?</p>
-            <input type="text" class="find_input" placeholder="ВВЕДИТЕ ВИД ЖИВОТНОГО">
-        </fieldset>
-        <section class="find_right">
-            <section class="find_white_button">Описать подробнее</section>
-            <button class="find_green_button" type="submit">НАЙТИ</button>
+    <section class="wrapper">
+        <form class="find">
+            <fieldset class="find_left">
+                <p class="find_input_title">КОГО ВЫ ИЩЕТЕ?</p>
+                <input type="text" class="find_input" placeholder="ВВЕДИТЕ ВИД ЖИВОТНОГО">
+            </fieldset>
+            <section class="find_right">
+                <section class="find_white_button">Описать подробнее</section>
+                <button class="find_green_button" type="submit">НАЙТИ</button>
+            </section>
+        </form>
+    </section>
+    <section class="wrapper">
+
+        <form class="find2">
+            <section class="find2_sec">
+                <span class="f2">ГДЕ ВЫ ИЩЕТЕ?</span>
+                <input type="text" class="f2i" placeholder="ВВЕДИТЕ ГОРОД И РАЙОН...">
+            </section>
+            <section class="find2_sec">
+                <span class="f2">КОГО ВЫ ИЩЕТЕ?</span>
+                <select class="f2i">
+                    <option value="">Кошка</option>
+                    <option value="">Собака</option>
+                    <option value="">Грызун</option>
+                    <option value="">Пресмыкающееся</option>
+                </select>
+            </section>
+            <section class="find2_sec">
+                <span class="f2">КОГО ВЫ ИЩЕТЕ?</span>
+                <nav class="f2b">
+                    <button class="f2btn">МАЛЬЧИК</button>
+                    <button class="f2btn">ДЕВОЧКА</button>
+                    <button class="f2btn">НЕВАЖНО</button>
+                </nav>
+            </section>
+            <button class="f2sb">НАЙТИ</button>
+        </form>
+    </section>
+    <section class="wrapper">
+
+        <section class="last_posts">
+        <p class="last_posts_title">Недавно добавленные объявления</p>
+            <section class="carousel_sec">
+                <span class="arrow" onclick="moveLeft()">
+                    <img src="/images/left_arrow.svg" alt="Стрелка влево">
+                </span>
+                <section class="carousel" id="carousel">
+                    <article class="carousel_item">
+                        <img src="/images/cat.svg" alt="кот рыжий" class="carousel_image">
+                        <span class="carousel_title" style="width: 30px;">Кошка</span>
+                        <span class="carousel_subtitle">Выбежала из дома 21.04.2025 примерно в 18:00.</span>
+                        <button class="carousel_button">Подробнее</button>
+                    </article>
+                    <article class="carousel_item">
+                        <img src="/images/image 16.svg" alt="кот рыжий" class="carousel_image">
+                        <span class="carousel_title" style="width: 19px;">Кот</span>
+                        <span class="carousel_subtitle">Пропал из дома 03.05.2025.</span>
+                        <button class="carousel_button">Подробнее</button>
+                    </article>
+                    <article class="carousel_item">
+                        <img src="/images/image 15.svg" alt="кот рыжий" class="carousel_image">
+                        <span class="carousel_title" style="width: 35px;">Собака</span>
+                        <span class="carousel_subtitle">Сбежала во время прогулки. 17.04.2025</span>
+                        <a style="color: white;" class="carousel_button" href="/card.html">Подробнее</a>
+                    </article>
+                    <article class="carousel_item hidden">
+                        <img src="/images/image (1).svg" alt="кот рыжий" class="carousel_image">
+                        <span class="carousel_title" style="width: 34px;">Собака</span>
+                        <span class="carousel_subtitle">Выбежала со двора</span>
+                        <button class="carousel_button">Подробнее</button>
+                    </article>
+                    <article class="carousel_item hidden">
+                        <img src="/images/image (2).svg" alt="кот рыжий" class="carousel_image">
+                        <span class="carousel_title" style="width: 34px;">Кролик</span>
+                        <span class="carousel_subtitle">Выбежал из клетки 12.05.2025</span>
+                        <button class="carousel_button">Подробнее</button>
+                    </article>
+                    <article class="carousel_item hidden">
+                        <img src="/images/image (3).svg" alt="кот рыжий" class="carousel_image">
+                        <span class="carousel_title" style="width: 18px;">Кот</span>
+                        <span class="carousel_subtitle">Сбежал 07.05.2025</span>
+                        <button class="carousel_button">Подробнее</button>
+                    </article>
+                </section>
+                <span class="arrow" onclick="moveRight()">
+                    <img src="/images/right_arrow.svg" alt="Стрелка вправо">
+                </span>
+            </section>
         </section>
-    </form>
-    <form class="find2">
-        <section class="find2_sec">
-            <span class="f2">ГДЕ ВЫ ИЩЕТЕ?</span>
-            <input type="text" class="f2i" placeholder="ВВЕДИТЕ ГОРОД И РАЙОН...">
+    </section>
+    <section class="wrapper">
+        <section class="about">
+            <section class="big_grey_block">
+                <p class="big_white">О НАС</p>
+            </section>
+            <section class="about_container">
+                <figure class="about_image">
+                    <img src="/images/image (4).svg" alt="кот и собака">
+                </figure>
+                <section class="points">
+                    <figure class="point">
+                        <img src="/images/pngwing.com (4) 1.svg" alt="" class="point_image">
+                        <p class="point_text" style="height: 26px;">Помогли найти более 500 животных.</p>
+                    </figure>
+                    <figure class="point">
+                        <img src="/images/accept-48 1.svg" alt="" class="point_image">
+                        <p class="point_text"style="height: 26px;" >Все услуги оказываются бесплатно.</p>
+                    </figure>
+                    <figure class="point" style="height: 60px;">
+                        <img src="/images/pngwing.com (3) 1.svg" alt="" class="point_image">
+                        <p class="point_text">Более трех лет способствуем возвращению питомцев к хозяевам.</p>
+                    </figure>
+                </section>
+            </section>
         </section>
-        <section class="find2_sec">
-            <span class="f2">ГДЕ ВЫ ИЩЕТЕ?</span>
-            <select class="f2i">
-                <option value="">Кошка</option>
-                <option value="">Собака</option>
-                <option value="">Грызун</option>
-                <option value="">Пресмыкающееся</option>
-            </select>
+    </section>
+    <section class="wrapper">
+
+        <section class="grid_container">
+            <article class="grid_item">
+                <img src="/images/Group 138.svg" alt="" class="grid_img">
+                <section class="grid_text_block">
+                    <p class="grid_text">Пропал: 28.04.2025</p>
+                    <p class="grid_text">Район: Курчатовский</p>
+                    <p class="grid_text">Иван Иванов</p>
+                    <p class="grid_text">8-951-212-67-89</p>
+                </section>
+            </article>
+            <article class="grid_item">
+                <img src="/images/image (5).svg" alt="" class="grid_img">
+                <section class="grid_text_block">
+                    <p class="grid_text">Пропал: 18.04.2025</p>
+                    <p class="grid_text">Район: Курчатовский</p>
+                    <p class="grid_text">Анастаси Иванова</p>
+                    <p class="grid_text">8-951-876-67-89</p>
+                </section>
+            </article>
+            <article class="grid_item">
+                <img src="/images/image.svg" alt="" class="grid_img">
+                <section class="grid_text_block">
+                    <p class="grid_text">Пропал: 30.04.2025</p>
+                    <p class="grid_text">Район: Ленинский</p>
+                    <p class="grid_text">Николай Скворцов</p>
+                    <p class="grid_text">8-951-298-67-89</p>
+                </section>
+            </article>
+            <article class="grid_item">
+                <img src="/images/Group 139.svg" alt="" class="grid_img">
+                <section class="grid_text_block">
+                    <p class="grid_text">Пропал: 28.04.2025</p>
+                    <p class="grid_text">Район: Центральный</p>
+                    <p class="grid_text">Екатерина Малинова</p>
+                    <p class="grid_text">8-951-212-09-89</p>
+                </section>
+            </article>
+            <article class="grid_item">
+                <img src="/images/Group 140.svg" alt="" class="grid_img">
+                <section class="grid_text_block">
+                    <p class="grid_text">Пропал: 15.05.2025</p>
+                    <p class="grid_text">Район: Центральный</p>
+                    <p class="grid_text">Евгения Соболева</p>
+                    <p class="grid_text">8-958-212-98-98</p>
+                </section>
+            </article>
+            <article class="grid_item">
+                <img src="/images/Group 141.svg" alt="" class="grid_img">
+                <section class="grid_text_block">
+                    <p class="grid_text">Пропал: 25.05.2025</p>
+                    <p class="grid_text">Район: Калининский</p>
+                    <p class="grid_text">Иван Никитин</p>
+                    <p class="grid_text">8-951-098-61-81</p>
+                </section>
+            </article>
         </section>
-        <section class="find2_sec">
-            <span class="f2">ГДЕ ВЫ ИЩЕТЕ?</span>
-            <nav class="f2b">
-                <button class="f2btn">МАЛЬЧИК</button>
-                <button class="f2btn">ДЕВОЧКА</button>
-                <button class="f2btn">НЕВАЖНО</button>
-            </nav>
-        </section>
-        <button class="f2sb">НАЙТИ</button>
-    </form>
-    <section class="last_posts">
-    <p class="last_posts_title">Недавно добавленные объявления</p>
-        <section class="carousel_sec">
-            <span class="arrow" onclick="moveLeft()">
+    </section>
+    <section class="wrapper">
+
+        <section class="bottom_carousel">
+            <span class="arrow" onclick="slidePrev()">
                 <img src="/images/left_arrow.svg" alt="Стрелка влево">
             </span>
-            <section class="carousel" id="carousel">
-                <article class="carousel_item">
-                    <img src="/images/cat.svg" alt="кот рыжий" class="carousel_image">
-                    <span class="carousel_title" style="width: 30px;">Кошка</span>
-                    <span class="carousel_subtitle">Выбежала из дома 21.04.2025 примерно в 18:00.</span>
-                    <button class="carousel_button">Подробнее</button>
-                </article>
-                <article class="carousel_item">
-                    <img src="/images/image 16.svg" alt="кот рыжий" class="carousel_image">
-                    <span class="carousel_title" style="width: 19px;">Кот</span>
-                    <span class="carousel_subtitle">Пропал из дома 03.05.2025.</span>
-                    <button class="carousel_button">Подробнее</button>
-                </article>
-                <article class="carousel_item">
-                    <img src="/images/image 15.svg" alt="кот рыжий" class="carousel_image">
-                    <span class="carousel_title" style="width: 35px;">Собака</span>
-                    <span class="carousel_subtitle">Сбежала во время прогулки. 17.04.2025</span>
-                    <a style="color: white;" class="carousel_button" href="/card.html">Подробнее</a>
-                </article>
-                <article class="carousel_item hidden">
-                    <img src="/images/image (1).svg" alt="кот рыжий" class="carousel_image">
-                    <span class="carousel_title" style="width: 34px;">Собака</span>
-                    <span class="carousel_subtitle">Выбежала со двора</span>
-                    <button class="carousel_button">Подробнее</button>
-                </article>
-                <article class="carousel_item hidden">
-                    <img src="/images/image (2).svg" alt="кот рыжий" class="carousel_image">
-                    <span class="carousel_title" style="width: 34px;">Кролик</span>
-                    <span class="carousel_subtitle">Выбежал из клетки 12.05.2025</span>
-                    <button class="carousel_button">Подробнее</button>
-                </article>
-                <article class="carousel_item hidden">
-                    <img src="/images/image (3).svg" alt="кот рыжий" class="carousel_image">
-                    <span class="carousel_title" style="width: 18px;">Кот</span>
-                    <span class="carousel_subtitle">Сбежал 07.05.2025</span>
-                    <button class="carousel_button">Подробнее</button>
-                </article>
-            </section>
-            <span class="arrow" onclick="moveRight()">
+            <article class="bottom_carousel_item">
+                <section class="bottom_carousel_item_name">
+                    <img src="/images/Group 142.svg" alt="" class="bcin_img">
+                    <section class="bcin_stars">
+                        <p class="bcin_name">Ирина Иванова <span class="bcin_grey">03.04.2025</span></p>
+                        <img src="/images/Group 143.svg" alt="" class="bcin_stars_img">
+                    </section>
+                </section>
+                <section class="bottom_carousel_item_desc">
+                    <p class="find_input_title">Хочу выразить огромную благодарность сайту и всем, кто помогал в помощи нашего питомца!!! Нашли кошку за 4 дня 8 км от дома... <br> Читать дальше</p>
+                    <img src="/images/image 8.svg" alt="" class="bci_img">
+                </section>
+            </article>
+            <article class="bottom_carousel_item hidden">
+                <section class="bottom_carousel_item_name">
+                    <img src="/images/Group 142 (1).svg" alt="" class="bcin_img">
+                    <section class="bcin_stars">
+                        <p class="bcin_name">Кирилл Иванов <span class="bcin_grey">26.04.2025</span></p>
+                        <img src="/images/Group 143.svg" alt="" class="bcin_stars_img">
+                    </section>
+                </section>
+                <section class="bottom_carousel_item_desc">
+                    <p class="find_input_title">Нашли!!! Всем ограмное спасибо, нашли очень быстро, осторожно обращались с собакой. Столько неравнодошных людей... Надеюсь... <br> Читать дальше</p>
+                    <img src="/images/sad.svg" alt="" class="bci_img">
+                </section>
+            </article>
+            <article class="bottom_carousel_item hidden">
+                <section class="bottom_carousel_item_name">
+                    <img src="/images/Ellipse 58.svg" alt="" class="bcin_img">
+                    <section class="bcin_stars">
+                        <p class="bcin_name">Артем Рязанов <span class="bcin_grey">29.03.2025</span></p>
+                        <img src="/images/Group 143.svg" alt="" class="bcin_stars_img">
+                    </section>
+                </section>
+                <section class="bottom_carousel_item_desc">
+                    <p class="find_input_title">Большое спасибо всем, кто помогал искать!!! Данный сайт очень помог, объвление легко загрузить, очень быстро нашли желающих помочь в ... <br> Читать дальше</p>
+                    <img src="/images/rizh.svg" alt="" class="bci_img">
+                </section>
+            </article>
+            <span class="arrow" onclick="slideNext()">
                 <img src="/images/right_arrow.svg" alt="Стрелка вправо">
             </span>
         </section>
     </section>
-    <section class="about">
-        <section class="big_grey_block">
-            <p class="big_white">О НАС</p>
-        </section>
-        <section class="about_container">
-            <figure class="about_image">
-                <img src="/images/image (4).svg" alt="кот и собака">
-            </figure>
-            <section class="points">
-                <figure class="point">
-                    <img src="/images/pngwing.com (4) 1.svg" alt="" class="point_image">
-                    <p class="point_text" style="height: 26px;">Помогли найти более 500 животных.</p>
-                </figure>
-                <figure class="point">
-                    <img src="/images/accept-48 1.svg" alt="" class="point_image">
-                    <p class="point_text"style="height: 26px;" >Все услуги оказываются бесплатно.</p>
-                </figure>
-                <figure class="point">
-                    <img src="/images/pngwing.com (3) 1.svg" alt="" class="point_image">
-                    <p class="point_text">Более трех лет способствуем возвращению питомцев к хозяевам.</p>
-                </figure>
+    <section class="wrapper">
+        
+        <section class="subscription">
+            <section class="sub_title">
+                <img src="/images/211693_bell_icon 1.svg" alt="" class="sub_img">
+                <p class="subscription_title">Подписаться на новости сервиса</p>
+            </section>
+            <section class="sub_data">
+                <input type="email" class="email_input" placeholder="ВВЕДИТЕ EMAIL...">
+                <section>
+                    <input type="checkbox" name="" id="">
+                    <span class="checkbox_text">согласие на обработку персональных данных</span>
+                </section>
+                <button class="green_with_border">ПОДПИСАТЬСЯ</button>
             </section>
         </section>
     </section>
-    <section class="grid_container">
-        <article class="grid_item">
-            <img src="/images/Group 138.svg" alt="" class="grid_img">
-            <section class="grid_text_block">
-                <p class="grid_text">Пропал: 28.04.2025</p>
-                <p class="grid_text">Район: Курчатовский</p>
-                <p class="grid_text">Иван Иванов</p>
-                <p class="grid_text">8-951-212-67-89</p>
-            </section>
-        </article>
-        <article class="grid_item">
-            <img src="/images/image (5).svg" alt="" class="grid_img">
-            <section class="grid_text_block">
-                <p class="grid_text">Пропал: 18.04.2025</p>
-                <p class="grid_text">Район: Курчатовский</p>
-                <p class="grid_text">Анастаси Иванова</p>
-                <p class="grid_text">8-951-876-67-89</p>
-            </section>
-        </article>
-        <article class="grid_item">
-            <img src="/images/image.svg" alt="" class="grid_img">
-            <section class="grid_text_block">
-                <p class="grid_text">Пропал: 30.04.2025</p>
-                <p class="grid_text">Район: Ленинский</p>
-                <p class="grid_text">Николай Скворцов</p>
-                <p class="grid_text">8-951-298-67-89</p>
-            </section>
-        </article>
-        <article class="grid_item">
-            <img src="/images/Group 139.svg" alt="" class="grid_img">
-            <section class="grid_text_block">
-                <p class="grid_text">Пропал: 28.04.2025</p>
-                <p class="grid_text">Район: Центральный</p>
-                <p class="grid_text">Екатерина Малинова</p>
-                <p class="grid_text">8-951-212-09-89</p>
-            </section>
-        </article>
-        <article class="grid_item">
-            <img src="/images/Group 140.svg" alt="" class="grid_img">
-            <section class="grid_text_block">
-                <p class="grid_text">Пропал: 15.05.2025</p>
-                <p class="grid_text">Район: Центральный</p>
-                <p class="grid_text">Евгения Соболева</p>
-                <p class="grid_text">8-958-212-98-98</p>
-            </section>
-        </article>
-        <article class="grid_item">
-            <img src="/images/Group 141.svg" alt="" class="grid_img">
-            <section class="grid_text_block">
-                <p class="grid_text">Пропал: 25.05.2025</p>
-                <p class="grid_text">Район: Калининский</p>
-                <p class="grid_text">Иван Никитин</p>
-                <p class="grid_text">8-951-098-61-81</p>
-            </section>
-        </article>
-    </section>
-    <section class="bottom_carousel">
-        <span class="arrow" onclick="slidePrev()">
-            <img src="/images/left_arrow.svg" alt="Стрелка влево">
-        </span>
-        <article class="bottom_carousel_item">
-            <section class="bottom_carousel_item_name">
-                <img src="/images/Group 142.svg" alt="" class="bcin_img">
-                <section class="bcin_stars">
-                    <p class="bcin_name">Ирина Иванова <span class="bcin_grey">03.04.2025</span></p>
-                    <img src="/images/Group 143.svg" alt="" class="bcin_stars_img">
+    <section class="wrapper">
+
+        <footer>
+            <section class="footer_links ">
+                <section class="left_links linkk">
+                    <a href="/index.html" class="footer_link" >Главная</a>
+                    <a href="/registration.html" class="footer_link">Регистрация</a>
+                    <a href="/login.html" class="footer_link">Авторизация</a>
+                    <a href="/account.html" class="footer_link">Личный кабинет</a>
+                </section>
+                <section class="right_links linkk">
+                    <a href="/add.html" class="footer_link">Найдено животное</a>
+                    <a href="/add.html" class="footer_link">Поиск</a>
                 </section>
             </section>
-            <section class="bottom_carousel_item_desc">
-                <p class="find_input_title">Хочу выразить огромную благодарность сайту и всем, кто помогал в помощи нашего питомца!!! Нашли кошку за 4 дня 8 км от дома... <br> Читать дальше</p>
-                <img src="/images/image 8.svg" alt="" class="bci_img">
-            </section>
-        </article>
-        <article class="bottom_carousel_item hidden">
-            <section class="bottom_carousel_item_name">
-                <img src="/images/Group 142 (1).svg" alt="" class="bcin_img">
-                <section class="bcin_stars">
-                    <p class="bcin_name">Кирилл Иванов <span class="bcin_grey">26.04.2025</span></p>
-                    <img src="/images/Group 143.svg" alt="" class="bcin_stars_img">
+            <section class="footer_contacts">
+                <p class="footer_text">Телефон: “8 (351)123-45-67”</p>
+                <p class="footer_text">e-mail: mail@newlife.ru</p>
+                <section class="footer_pic">
+                    <img src="/images/-65-256 1.svg" alt="" class="footer_img">
+                    <img src="/images/image 9.svg" alt="" class="footer_img">
                 </section>
             </section>
-            <section class="bottom_carousel_item_desc">
-                <p class="find_input_title">Нашли!!! Всем ограмное спасибо, нашли очень быстро, осторожно обращались с собакой. Столько неравнодошных людей... Надеюсь... <br> Читать дальше</p>
-                <img src="/images/sad.svg" alt="" class="bci_img">
-            </section>
-        </article>
-        <article class="bottom_carousel_item hidden">
-            <section class="bottom_carousel_item_name">
-                <img src="/images/Ellipse 58.svg" alt="" class="bcin_img">
-                <section class="bcin_stars">
-                    <p class="bcin_name">Артем Рязанов <span class="bcin_grey">29.03.2025</span></p>
-                    <img src="/images/Group 143.svg" alt="" class="bcin_stars_img">
-                </section>
-            </section>
-            <section class="bottom_carousel_item_desc">
-                <p class="find_input_title">Большое спасибо всем, кто помогал искать!!! Данный сайт очень помог, объвление легко загрузить, очень быстро нашли желающих помочь в ... <br> Читать дальше</p>
-                <img src="/images/rizh.svg" alt="" class="bci_img">
-            </section>
-        </article>
-        <span class="arrow" onclick="slideNext()">
-            <img src="/images/right_arrow.svg" alt="Стрелка вправо">
-        </span>
+        </footer>
     </section>
-    <section class="subscription">
-        <section class="sub_title">
-            <img src="/images/211693_bell_icon 1.svg" alt="" class="sub_img">
-            <p class="subscription_title">Подписаться на новости сервиса</p>
-        </section>
-        <section class="sub_data">
-            <input type="email" class="email_input" placeholder="ВВЕДИТЕ EMAIL...">
-            <section>
-                <input type="checkbox" name="" id="">
-                <span class="checkbox_text">согласие на обработку персональных данных</span>
-            </section>
-            <button class="green_with_border">ПОДПИСАТЬСЯ</button>
-        </section>
-    </section>
-    <footer>
-        <section class="footer_links ">
-            <section class="left_links linkk">
-                <a href="/index.html" class="footer_link" >Главная</a>
-                <a href="/registration.html" class="footer_link">Регистрация</a>
-                <a href="/login.html" class="footer_link">Авторизация</a>
-                <a href="/account.html" class="footer_link">Личный кабинет</a>
-            </section>
-            <section class="right_links linkk">
-                <a href="/add.html" class="footer_link">Найдено животное</a>
-                <a href="/add.html" class="footer_link">Поиск</a>
-            </section>
-        </section>
-        <section class="footer_contacts">
-            <p class="footer_text">Телефон: “8 (351)123-45-67”</p>
-            <p class="footer_text">e-mail: mail@newlife.ru</p>
-            <section class="footer_pic">
-                <img src="/images/-65-256 1.svg" alt="" class="footer_img">
-                <img src="/images/image 9.svg" alt="" class="footer_img">
-            </section>
-        </section>
-    </footer>
 </body>
 </html>
