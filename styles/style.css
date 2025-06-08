@@ -13,7 +13,8 @@ body{
 .wrapper{
     max-width: 720px;
     margin: 0 auto;
-
+    display: flex;
+    gap: 249px;
 }
 header{
     height: 130px;
@@ -166,8 +167,8 @@ header{
     display: flex;
     align-items: center;
     width: 560px;
-    margin: 0 auto;
-    position: relative;
+    margin: 0 81px;
+
 }
 .carousel {
     display: flex;
@@ -345,6 +346,10 @@ header{
     background-color: #ABD4AE;
     border: 1px solid black;
     border-radius: 4px;
+    transition: 0.3s;
+}
+.green_with_border.toggled {
+    background-color: #40404080;
 }
 .email_input{
     width: 108px;
@@ -355,7 +360,7 @@ header{
     border-radius: 4px;
 }
 footer{
-    width: 720px;
+    width: 100vw;
     height: 115px;
     background-color: #4D4D52;
     display: flex;
@@ -437,6 +442,9 @@ footer{
     align-items: center;
     justify-content: center;
 }
+.change_btn.toggled {
+    background-color: #40404080;
+}
 .tel{
     margin-left: 20px;
 }
@@ -460,6 +468,9 @@ footer{
     border: none;
     font-size: 15px;
     margin-bottom: 25px;
+}
+.grey_nav.toggled {
+    background-color: #40404080;
 }
 .posts_two{
     display: flex;
@@ -513,7 +524,7 @@ footer{
     display: flex;
     gap: 20px;
     position: absolute;
-    margin: -400px 85px auto;
+    margin: -400px 80px auto;
 }
 .small_title{
     margin-left: 40px;
@@ -581,6 +592,9 @@ footer{
     margin-left: 145px;
     
 }
+.save_button.toggled {
+    background-color: #40404080;
+}
 .sort{
     width: 680px;
     height: 90px;
@@ -625,6 +639,10 @@ footer{
     border-radius: 10px;
     color: black;
     font-size: 16px;
+    transition: 0.3s;
+}
+.filter_button.toggled {
+    background-color: #40404080;
 }
 .grid_cards{
     display: grid;
@@ -746,6 +764,10 @@ td img {
     align-items: center;
     justify-content: center;
     display: flex;
+    transition: 0.3s;
+}
+.cont_btn.toggled {
+    background-color: #40404080;
 }
 .f2i{
     width: 100px;
@@ -773,4 +795,7 @@ td img {
     border: none;
     border-radius: 7px;
     margin-top: 20px;
+}
+.f2btn.active {
+  background: #40404080; 
 }

@@ -61,10 +61,99 @@ document.addEventListener('DOMContentLoaded', () => {
     if (findWhiteButton && find2) {
         findWhiteButton.addEventListener('click', () => {
             find2.style.display = 'flex';
-            console.log('Кнопка нажата, .find2 должен быть виден');
         });
-    } else {
-        console.error('Элемент .find2 или .find_white_button не найден');
+    }
+});
+const elements = [
+    document.querySelector('.p1'),
+    document.querySelector('.p2'),
+    document.querySelector('.p3'),
+    document.querySelector('.p4'),
+    document.querySelector('.p5'),
+    document.querySelector('.p6'),
+    document.querySelector('.p7'),
+    document.querySelector('.p8')
+];
+
+function showElements(visibleIndices) {
+    elements.forEach((el, index) => {
+        if (el) {
+            el.classList.toggle('visible', visibleIndices.includes(index));
+            el.classList.toggle('hidden', !visibleIndices.includes(index));
+        } 
+    });
+}
+
+document.addEventListener('click', (event) => {
+    try {
+        if (event.target.matches('.on_moderation')) {
+            showElements([2, 3]);
+        } else if (event.target.matches('.active')) {
+            showElements([0, 1]); 
+        } else if (event.target.matches('.found')) {
+            showElements([4, 5]); 
+        } else if (event.target.matches('.archive')) {
+            showElements([6, 7]); 
+        }
+    } catch (error) {
+    }
+});
+document.querySelectorAll('.f2btn').forEach(button => {
+  button.addEventListener('click', function() {
+    this.classList.toggle('active');
+  });
+});
+document.addEventListener('click', (event) => {
+    if (event.target.matches('.green_with_border')) {
+        try {
+            event.target.classList.toggle('toggled');
+        } catch (error) {
+        }
+    }
+});
+document.addEventListener('click', (event) => {
+    if (event.target.closest('.cont_btn')) {
+        try {
+            event.target.closest('.cont_btn').classList.toggle('toggled');
+        } catch (error) {
+        }
+    }
+});
+document.addEventListener('click', (event) => {
+    if (event.target.closest('.change_btn')) {
+        try {
+            event.target.closest('.change_btn').classList.toggle('toggled');
+        } catch (error) {
+        }
+    }
+});
+document.addEventListener('click', (event) => {
+    if (event.target.closest('.grey_nav')) {
+        try {
+            document.querySelectorAll('.grey_nav').forEach(btn => {
+                btn.classList.remove('toggled');
+            });
+            event.target.closest('.grey_nav').classList.add('toggled');
+        } catch (error) {
+        }
+    }
+});
+document.addEventListener('click', (event) => {
+    if (event.target.closest('.save_button')) {
+        try {
+            event.target.closest('.save_button').classList.toggle('toggled');
+        } catch (error) {
+            console.error('Ошибка при переключении цвета кнопки:', error);
+        }
+    }
+});
+document.addEventListener('click', (event) => {
+    if (event.target.closest('.filter_button')) {
+        try {
+            event.target.closest('.filter_button').classList.toggle('toggled');
+        } catch (error) {
+            console.error('Ошибка при переключении цвета кнопки:', error);
+        }
     }
 });
 let p1 = document.querySelector('.p1');
@@ -120,4 +209,3 @@ archive.addEventListener('click', function () {
     p7.style.display = 'block';
     p8.style.display = 'block';
 })
-
