@@ -610,13 +610,13 @@ footer{
 .filters{
     display: flex;
     align-items: center;
-    .date_filter{
-        margin-right: 76px;
-    }
-    .status_filter{
-        margin-right: 245px;
-        
-    }
+}
+.date_filter{
+    margin-right: 76px;
+}
+.status_filter{
+    margin-right: 245px;
+    
 }
 .filter_input{
     width: 90px;
@@ -779,14 +779,14 @@ td img {
 .f2b{
     display: flex;
     gap: 10px;
-    .f2btn{
-        width: 50px;
-        height: 20px;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 4px;
-        font-size: 7px;
-    }
+}
+.f2btn{
+    width: 50px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 7px;
 }
 .f2sb{
     width: 110px;
